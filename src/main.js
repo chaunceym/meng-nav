@@ -63,8 +63,8 @@ $('.addButton').on('click', ()=>{
 })
 
 window.onbeforeunload = () => {
-    // const string = JSON.stringify(hashMap)
-    // localStorage.setItem('webSiteData', string)
+    const string = JSON.stringify(hashMap)
+    localStorage.setItem('webSiteData', string)
 }
 
 $(document).on('keypress', (e)=>{
