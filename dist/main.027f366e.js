@@ -173,8 +173,9 @@ $('.addButton').on('click', function () {
   render();
 });
 
-window.onbeforeunload = function () {// const string = JSON.stringify(hashMap)
-  // localStorage.setItem('webSiteData', string)
+window.onbeforeunload = function () {
+  var string = JSON.stringify(hashMap);
+  localStorage.setItem('webSiteData', string);
 };
 
 $(document).on('keypress', function (e) {
@@ -187,4 +188,4 @@ $(document).on('keypress', function (e) {
   }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.59ec7436.js.map
+//# sourceMappingURL=main.027f366e.js.map
